@@ -10,6 +10,6 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVer % Provided
 
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
-dockerBaseImage := "spark:v3.0.1-demo"
+dockerBaseImage := "jaceklaskowski/spark:v3.0.1"
 dockerEntrypoint := Seq("/opt/entrypoint.sh")
 dockerExposedPorts ++= Seq(4040)

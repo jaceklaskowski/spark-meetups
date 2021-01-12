@@ -39,11 +39,11 @@ Build and push JDK11-based Spark image to minikube's Docker daemon.
 ```text
 $ ./bin/docker-image-tool.sh \
     -m \
-    -t v3.0.1-meetup \
+    -t v3.0.1-demo \
     -b java_image_tag=11-jre-slim \
     build
 ...
-Successfully tagged spark:v3.0.1-meetup
+Successfully tagged spark:v3.0.1-demo
 ```
 
 Point the shell to minikube's Docker daemon.
