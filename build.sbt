@@ -7,6 +7,7 @@ scalaVersion := "2.12.12"
 
 val sparkVer = "3.0.1"
 libraryDependencies += "org.apache.spark" %% "spark-sql" % sparkVer % Provided
+libraryDependencies += "org.apache.spark" %% "spark-kubernetes" % sparkVer % Provided
 
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)

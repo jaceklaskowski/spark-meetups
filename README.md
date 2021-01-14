@@ -39,11 +39,11 @@ Build and push JDK11-based Spark image to minikube's Docker daemon.
 ```text
 $ ./bin/docker-image-tool.sh \
     -m \
-    -t v3.0.1-demo \
+    -t v3.0.1 \
     -b java_image_tag=11-jre-slim \
     build
 ...
-Successfully tagged spark:v3.0.1-demo
+Successfully tagged spark:v3.0.1
 ```
 
 Point the shell to minikube's Docker daemon.
@@ -54,7 +54,7 @@ eval $(minikube -p minikube docker-env)
 
 ```text
 $ docker images
-spark                                     v3.0.1-meetup   66983585811c   53 seconds ago   487MB
+spark                                     v3.0.1          66983585811c   53 seconds ago   487MB
 spark-docker-example                      0.1.0           45f2b54514bb   11 minutes ago   741MB
 openjdk                                   11              27adf3d41a0d   47 hours ago     628MB
 openjdk                                   8-jre-slim      cd08b38dfcae   2 days ago       187MB
