@@ -35,5 +35,9 @@ object SparkApp extends App {
   // That assumes SparkContext has been created
   // esp. in spark-submit --deploy client
 
-  // spark.sparkContext.stop()
+  val shouldStop = args.length > 0
+  println(s">>> Is the driver going to stop? $shouldStop")
+  if (shouldStop) {
+     spark.sparkContext.stop()
+  }
 }

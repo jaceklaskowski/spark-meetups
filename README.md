@@ -1,6 +1,8 @@
-# spark-docker-example
+# Spark on Kubernetes Demos
 
 The project uses [Docker Plugin](https://www.scala-sbt.org/sbt-native-packager/formats/docker.html#docker-plugin) from [sbt-native-packager](https://www.scala-sbt.org/sbt-native-packager/index.html) plugin.
+
+The build is multi-project. Use `projects` to learn about the available projects.
 
 ```text
 sbt 'show dockerCommands'
@@ -13,7 +15,7 @@ sbt clean docker:stage
 Review `target/docker/stage` directory (i.e. `Dockerfile`, `1` and `2` directories).
 
 ```text
-$ tree target/docker/stage
+tree target/docker/stage
 ```
 
 ## Building Docker Image
