@@ -8,6 +8,14 @@ The build is multi-project. Use `projects` to learn about the available projects
 sbt projects
 ```
 
+Switch to a project of your interest or use the project name with the commands that follow.
+
+```text
+project spark-streams-google-storage-demo
+```
+
+Otherwise, the commands are going to be executed across all of the projects (that can be time-consuming and simply not what you want).
+
 ```text
 sbt 'show dockerCommands'
 ```
